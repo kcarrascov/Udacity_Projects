@@ -14,7 +14,7 @@ The set of data delivered with which they will work are the following tables:
 Here you can find information about the records in the log data associated with the playback of songs (NextSong)
 (songplay_id, start_time, user_id, level, song_id, artist_id, session_id, location, user_agent)
 
-2.**Users:* 
+2.**Users:**
 
 User information in the application
 (user_id, first_name, last_name, gender, level)
@@ -24,19 +24,19 @@ User information in the application
 information about the available songs
 (song_id, title, artist_id, year, duration)
 
-4.**Artists:*
+4.**Artists:**
 
 Information of the artists found in the music database
 (artist_id, name, location, latitude, longitude)
 
-5.**Time:*  
+5.**Time:**
 
 Time stamps of the records in the songs 
 (start_time, hour, day, week, month, year, weekday)
 
 Then, with this information we should proceed to the project if, finding the necessary files in the workspace. The steps and files considered are the following:
 
-1.**Create Tables
+1.**Create Tables**
 
  1.1 sql_queries.py file : using the INSERT AND DROP commands 
 
@@ -45,7 +45,7 @@ Then, with this information we should proceed to the project if, finding the nec
  1.3 test.ipnyb file: confirmation of correct table and data creation
 
 
-2.**Creation of ETL processes:
+2.**Creation of ETL processes:**
 
  2.1 etl.ipnyb file: follow instructions for ETL process creation for each table 
 
@@ -55,13 +55,13 @@ Then, with this information we should proceed to the project if, finding the nec
 
 
 
-3.**Create ETL pipeline:
+3.**Create ETL pipeline:**
 
  3.1 etly.py file: use the completion in the etl jupyter of the data processing
 
  3.2 test.ipynb file: confirm correct records in tables
 
 
-4.**Documentation process:
+4.**Documentation process:**
 
  4.1 README.md file: This file analyzes the purpose and defines what has been done for the design of your database schema and ET pipeline
