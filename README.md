@@ -19,7 +19,7 @@ Here you can find information about the records in the log data associated with 
 User information in the application
 (user_id, first_name, last_name, gender, level)
 
-3.*Songs:* 
+3.**Songs:** 
 
 information about the available songs
 (song_id, title, artist_id, year, duration)
