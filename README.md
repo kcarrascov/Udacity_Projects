@@ -36,7 +36,7 @@ Time stamps of the records in the songs
 
 Then, with this information we should proceed to the project if, finding the necessary files in the workspace. The steps and files considered are the following:
 
-1.Create Tables 
+1.#Create Tables# 
 
  1.1 sql_queries.py file : using the INSERT AND DROP commands 
 
@@ -45,7 +45,7 @@ Then, with this information we should proceed to the project if, finding the nec
  1.3 test.ipnyb file: confirmation of correct table and data creation
 
 
-2.Creation of ETL processes:
+2.#Creation of ETL processes:#
 
  2.1 etl.ipnyb file: follow instructions for ETL process creation for each table 
 
@@ -55,13 +55,13 @@ Then, with this information we should proceed to the project if, finding the nec
 
 
 
-3.Create ETL pipeline:
+3.#Create ETL pipeline:#
 
  3.1 etly.py file: use the completion in the etl jupyter of the data processing
 
  3.2 test.ipynb file: confirm correct records in tables
 
 
-4.Documentation process:
+4.#Documentation process:#
 
  4.1 README.md file: This file analyzes the purpose and defines what has been done for the design of your database schema and ET pipeline
