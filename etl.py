@@ -48,7 +48,7 @@ def process_log_file(cur, filepath):
     for i, row in user_df.iterrows():
         cur.execute(user_table_insert, row)
 
-    'Insert songplay records.
+    'Insert songplay records.'
     for index, row in df.iterrows():
         
         'Get songid and artistid from song and artist tables.'
