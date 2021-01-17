@@ -39,17 +39,27 @@ Then, with this information we should proceed to the project if, finding the nec
 **1.Create Tables**
 
  1.1 sql_queries.py file : using the INSERT AND DROP commands 
+ 
+This file, using Python, contains all the declarations to create the fact and dimension tables and data used during the loading process. The declarations implemented here        (CREATE TABLE and INSERT) are imported and used in the files that follow and the following ones.
 
  1.2 créate_tables.py file: database creation
+ 
+This file will create the Postgres database and each of the necessary tables, connecting them, eliminating the existing ones and creating the fact and dimension   tables.Then, in the following main file the data will be completed
 
  1.3 test.ipnyb file: confirmation of correct table and data creation
+
+This file will be a verification test to check the correct execution of the table creation and the data inserted
 
 
 **2.Creation of ETL processes:**
 
- 2.1 etl.ipnyb file: follow instructions for ETL process creation for each table 
+ 2.1 etl.ipnyb file: 
+ 
+ In this file you must follow the instructions for the creation of the ETL process for each table 
 
  2.2 test.ipynb file: confirmation that the data was correctly inserted 
+ 
+ This file will be a verification test to check the correct execution of the table creation and the data inserted
 
  2.3 create.table.py: used to restore tables before the corresponding executions
 
@@ -58,6 +68,8 @@ Then, with this information we should proceed to the project if, finding the nec
 **3.Create ETL pipeline:**
 
  3.1 etly.py file: use the completion in the etl jupyter of the data processing
+ 
+Here the ETL process will start and the table with the data will be completed. The ETL process is implemented by extracting the raw data found in the JSON file, transforming it and loading it into the previously created tables
 
  3.2 test.ipynb file: confirm correct records in tables
 
