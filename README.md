@@ -50,17 +50,21 @@ Then, with this information we should proceed to the project if, finding the nec
 
  2.3 create.table.py: used to restore tables before the corresponding executions
 
+As stated in the previous steps, for this, instructions are taken from the etl.ipynb file to develop ETL processes for each table. At the end of each section of the table, test.ipynb will be run to confirm that the records were inserted correctly. Finally, the file create_tables.py should be run again to restore the corresponding tables before each time you run this same jupyter notebook
+
 
 
 **3.Create ETL pipeline:**
 
  3.1 etly.py file: 
  Use the completion in the etl jupyter of the data processing
- Here the ETL process will start and the table with the data will be completed. The ETL process is implemented by extracting the raw data found in the JSON file, transforming it and loading it into the previously created tables
+ Here the ETL process will start and the table with the data will be completed. The ETL process is implemented by extracting the raw data found in the JSON file, transforming it  and loading it into the previously created tables
 
  3.2 test.ipynb file: 
  Confirm correct records in tables
 
+As stated in the previous steps, the contents of the notebook etl.ipynb should be used to complete the pyhton etl.py, where the complete data sets will be processed. Similarly, here you must run the file create_tables.py before running etl.py to restore the tables. 
+Then, with test.ipynb again you can reconfirm the correct record inserted in the tables
 
 **4.Documentation process:**
 
