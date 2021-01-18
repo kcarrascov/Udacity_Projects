@@ -62,18 +62,18 @@ songplay_table_insert = ("""INSERT INTO songsplay (songplay_id, start_time, user
                             
 """)
 
-user_table_insert = ("""INSERT INTO user (user_id, first_name, last_name, gender, level) \
+user_table_insert = ("""INSERT INTO users (user_id, first_name, last_name, gender, level) \
                         VALUES (%s, %s, %s,%s, %s)
                         ON CONFLICT (user_id) DO UPDATE SET level=EXCLUDED.level;
 """)
 
-song_table_insert = ("""INSERT INTO song (song_id, title, artist_id, year, duration) \
+song_table_insert = ("""INSERT INTO songs (song_id, title, artist_id, year, duration) \
                         VALUES (%s, %s, %s,%s, %s)
                         ON CONFLICT DO NOTHING;
                         
 """)
 
-artist_table_insert = ("""INSERT INTO artist (artist_id, name, location, latitude, longitude) \
+artist_table_insert = ("""INSERT INTO artists (artist_id, name, location, latitude, longitude) \
                           VALUES (%s, %s, %s,%s, %s)
                           ON CONFLICT DO NOTHING;
 """)
@@ -87,7 +87,7 @@ time_table_insert = ("""INSERT INTO time (start_time, hour, day, week, month, ye
 # FIND SONGS
 
 song_select = ("""SELECT A.song_id, B.artist_id
-                  FROM song A JOIN artist B 
+                  FROM songs A JOIN artist B 
                   ON A.artist_id=B.artist_id
                   WHERE A.title= %s AND B.name= %s AND A.duration= %s
 """)
