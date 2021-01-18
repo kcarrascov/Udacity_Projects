@@ -34,7 +34,7 @@ song_table_create = ("""CREATE TABLE IF NOT EXISTS songs
                          title varchar NOT NULL,
                          artist_id varchar NOT NULL,
                          year int,
-                         duration int)
+                         duration float)
 """)
 
 artist_table_create = ("""CREATE TABLE IF NOT EXISTS artists
